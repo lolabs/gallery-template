@@ -1,0 +1,69 @@
+/* line 1, ../../sass/partials/menubar.scss */
+.sheader {
+  background-color: gray;
+  text-align: center;
+  padding: 10px;
+}
+/* line 5, ../../sass/partials/menubar.scss */
+.sheader a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 10, ../../sass/partials/menubar.scss */
+#_menu-bar {
+  display: block;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: green;
+}
+/* line 15, ../../sass/partials/menubar.scss */
+#_menu-bar li {
+  float: left;
+}
+/* line 18, ../../sass/partials/menubar.scss */
+#_menu-bar li.active a {
+  color: red;
+}
+
+/* line 24, ../../sass/partials/menubar.scss */
+.center ul {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: auto;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+/* line 32, ../../sass/partials/menubar.scss */
+.center ul li {
+  float: left;
+  padding: 10px;
+}
+/* line 35, ../../sass/partials/menubar.scss */
+.center ul li a {
+  text-decoration: none;
+}
+
+/* line 40, ../../sass/partials/menubar.scss */
+.menu-container {
+  margin: 0 auto;
+  width: 90%;
+}
+/* line 44, ../../sass/partials/menubar.scss */
+.menu-container nav ul {
+  padding: 20px;
+  border: 1px solid black;
+  line-height: 40px;
+  min-height: 50px;
+}
+/* line 49, ../../sass/partials/menubar.scss */
+.menu-container nav ul li {
+  float: left;
+  width: 20%;
+}
+/* line 52, ../../sass/partials/menubar.scss */
+.menu-container nav ul li a {
+  text-decoration: none;
+}

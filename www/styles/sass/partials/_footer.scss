@@ -1,0 +1,20 @@
+footer{
+	height: 45px;
+	margin-top:25px;
+	nav{
+		height: 100%;
+		min-width: 355px;
+		ul{
+			height: 100%;
+			text-align:center;
+			li{
+				float:left;
+				height: 100%;
+				padding: 15px;
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
