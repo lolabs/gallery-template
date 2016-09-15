@@ -1,0 +1,21 @@
+// =============================================
+// Mixin - Fontsize
+// 
+// Calculates scaling von font sizes. Provide
+// font size for normal page size and this mixin
+// calculates all necessary steps to large page
+// size
+// =============================================
+
+@mixin font-size($standard-size) {
+    font-size: #{$standard-size}px;
+    $new-size: $standard-size;
+    $bp-target: $bp-normal;
+    @while $bp-target < $bp-large {
+    	$new-size: $new-size+1;
+    	$bp-target: ($new-size/$standard-size/$scaling-vertical)*$bp-normal;
+    	@include bp('min-width', $bp-target) {
+            font-size: #{$new-size}px;
+        }
+    }
+}

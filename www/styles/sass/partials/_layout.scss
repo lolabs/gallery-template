@@ -1,0 +1,115 @@
+.wrapper {
+    width: $page-width-large;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    section.logo {
+        padding-left: $menu-width;
+    }
+    nav.main {
+        width: $menu-width;
+        float: left;
+        position: fixed;
+    	background: #FFFFFF;
+    	height: 100%;
+    	text-transform: uppercase;
+    }
+    nav.context {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .contentarea {
+        width: 100% - $menu-width;
+        float: left;
+        //margin-left: $menu-width;
+        margin-top: 10%;
+    }
+    .clearer {
+        clear: both;
+    }
+}
+@include bp('max-width', $bp-large) {
+    .wrapper {
+        width: calc(100% - $framesize);
+    }
+    .menuToggle {
+		display:none;
+	}
+	.center ul{
+	    width: -moz-fit-content;
+	    width: -webkit-fit-content;
+	    width: fit-content;
+	    margin: auto;
+	    min-height: 50px;
+	    display: flex;
+	    align-items: center;
+	    li {
+	    	float:left;
+	    	padding: 10px;
+	    	a {
+	    		text-decoration: none;
+	    	}
+	    }
+	}
+}
+@include bp('max-width', $bp-normal) {
+    .wrapper {
+        width: $page-width-normal;
+    }
+    .menuToggle {
+		display:none;
+	}
+	.center ul{
+	    width: -moz-fit-content;
+	    width: -webkit-fit-content;
+	    width: fit-content;
+	    margin: auto;
+	    min-height: 50px;
+	    display: flex;
+	    align-items: center;
+	    li {
+	    	float:left;
+	    	padding: 10px;
+	    	a {
+	    		text-decoration: none;
+	    	}
+	    }
+	}
+}
+/**
+* Small Displays
+*/
+@include bp('max-width', $bp-small){
+	.menuToggle {
+		display:block;
+		position: fixed;
+		top: 113px;
+		border-radius:0px 50px 50px 0px;
+		height: 50px;
+		line-height: 45px;
+		background-color: $gray;
+		color: white;
+		z-index:1;
+		left:0px;
+	}
+	.center ul{
+		//background-color: yellow;
+		//width: auto;
+		//margin: auto;
+		//min-height: 50px;
+		//display: none;
+		//align-items: center;
+		//&.active{
+		//	display:block;
+		//}
+		li {
+			float:none;
+			padding: 10px;
+			border:1px solid gray;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
